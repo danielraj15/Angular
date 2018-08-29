@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import {UserdetailsService} from '../userdetails.service';
+import { getViewData } from '@angular/core/src/render3/instructions';
 @Component({
   selector: 'app-whatsnew',
   templateUrl: './whatsnew.component.html',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WhatsnewComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private myservice:UserdetailsService) { }
+  myarray:any[];
   ngOnInit() {
+  this.myarray=this.myservice.getData();
   }
 
 }

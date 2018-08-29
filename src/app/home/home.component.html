@@ -16,7 +16,12 @@
       </div>
       <div class="sectionleft">
           <div class="card1">
-
+            <input [(ngModel)]="searchText" placeholder="search text goes here">
+<ul>
+  <li *ngFor="let c of characters | filter : searchText">
+    {{c}}
+  </li>
+</ul>
             </div>
       </div>
 </div>

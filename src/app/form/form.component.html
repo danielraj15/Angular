@@ -1,0 +1,17 @@
+<div class="form">
+  <form [formGroup] = "myformm" (ngSubmit)="myfun(myformm.value)">
+
+   <label>
+     Name:
+   </label> <input type="text" formControlName = "firstname" >
+   <label>
+     Phone number: 
+   </label>
+    <input type="text" formControlName = "phonenum">
+<br>  
+   <input type="submit" value="Submit">
+
+  </form>
+
+  {{myformm.value | json}}
+</div>

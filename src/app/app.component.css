@@ -137,13 +137,42 @@ width: 1000px;
 	display: block;
 	text-decoration: none;
 	color: white;
+	min-width: 100px;
+	text-align: center;
 }
 .list a:hover{
 	display: block;
 	transition-duration: 0.3s;
 	border-radius: 5px;
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-	background-color: rgba(14, 147, 209, 0.938)
+	background-color: rgba(7, 58, 105, 0.938);
+	
 }
 
+ul li ul {
+	visibility: hidden;
+	opacity: 1;
+	min-width: 100px;
+	
+	position: absolute;
+	transition: all 0.3s ease;	
+	color: rgb(24, 44, 38);
+	
+  }
+  
+  ul li:hover > ul,
+  ul li ul:hover {
+	visibility: visible;
+	opacity: 1;
+	display: block;
+  }
+  
+  ul li ul li {
+	clear: both;
+	width: 100%;
+  }
+
+  .dropdown{
+	  
+  }
 
