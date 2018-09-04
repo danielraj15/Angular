@@ -5,7 +5,7 @@
 .sectionleft{
     margin-top:25px;
     width: 290px;
-    height:300px;
+    
     background-color: rgba(240, 230, 230, 0.233);
     border-radius: 5px;
     float: left;
@@ -26,7 +26,7 @@ background-color: rgb(17, 92, 158);
     margin-left: 5px;
     margin-right: 5px;
     width: 690px;
-    height:300px;
+    
     background-color: rgba(240, 230, 230, 0.233);
     border-radius: 5px;
     float: left;

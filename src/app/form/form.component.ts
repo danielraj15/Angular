@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormGroup, FormControl} from '@angular/forms';
+import { NgModule }       from '@angular/core';
+import {user} from "../form/user"
 
 
 @Component({
@@ -11,22 +13,19 @@ export class FormComponent implements OnInit {
 
   constructor() { }
 
-  myformm:FormGroup;
+ 
+userList:user[]=[];
 
 
-
+ adduser(form){
+   var user:user;
+   user=form.value;
+   this.userList.push(user);
+ }
   ngOnInit() {
-    this.myformm = new FormGroup(
-      {
-        firstname : new FormControl(),
-        phonenum : new FormControl()
-
-      }
-    );
+    
   }
-
-  myfun=function(variable)
-  {
-    console.log(variable);
-  }
+  
+ 
+  
 }

@@ -50,7 +50,7 @@ table {
 
 
 #wrapper{
-    width: 1000px;
+    width: 1040px;
     height: 1000px;
 	margin: 0px auto;
 	border-radius: 10px;
@@ -82,7 +82,7 @@ table {
 	margin: 20px 20px;
 	font-family: cursive;
 	color:rgb(255, 255, 255);
-	font-size: 30px;
+	font-size: 25px;
 }
 .clear{
 	clear: both;
@@ -172,7 +172,11 @@ ul li ul {
 	width: 100%;
   }
 
-  .dropdown{
-	  
+  .signup{
+	  height: 20px;
+	  width: 100px;
+	  float: right;
+	  margin-right:20px; 
   }
+
 
